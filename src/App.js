@@ -3,6 +3,7 @@ import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
+import User from './pages/User'
 import NotFound from './pages/NotFound'
 import { GithubProvider } from './context/github/GithubContext'
 
@@ -22,6 +23,10 @@ function App() {
 								<Route
 									path='/about'
 									element={<About />}
+								/>
+								<Route
+									path='/user/:login'
+									element={<User />}
 								/>
 								<Route
 									path='/NotFound'
